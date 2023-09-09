@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Rosario', sans-serif; */
+}
+
+.container {
+    display: flex;
+    background: url("pexels-sindre-fs-1028546.jpg");
+    background-position:center;
+    background-size:cover;
+}
+
+.left {
+    height: 100vh;
+    width: 60%;
+}
+.citylogo img{
+    position: relative;
+    height: 40px;
+    width: 50px;
+    top: 50px;
+    left: 30px;
+    transition: 0.5s;
+}
+.cityname{
+    position: relative;;
+    height: 12px;
+    width: 30px;
+    color:whitesmoke;
+    left: 92px;
+    top: -32px;
+    font-size: 90px;
+    transition: 0.5s;
+}   
+.info{
+    position: relative;
+    height: 420px;
+    width: 690px;
+    top: -33px;
+    left: 23px;
+}
+.temp{
+    position:absolute;
+    height: 210px;
+    width:345px;
+    top: 195px;
+}
+.temp img{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 12px;
+    transition: 0.5s;
+}
+.temp label{
+    position: absolute;
+    top: 60px;
+    font-size: 100px;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+.cloud{
+    position: absolute;
+    left: 346px;
+    height: 210px;
+    width:345px;
+    top: 195px;
+}
+.cloud img{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 20px;
+    left:-60px;
+}
+.wind{
+    position:relative;
+    top: 400px;
+    height: 140px;
+    width:220px;
+    color: whitesmoke;
+    /* border-right: 1px solid whitesmoke; */
+}
+.wind label{
+    font-size: 20px;
+    transition: 0.5s;
+}
+.dta{
+    font-size: 50px;
+    position: absolute;
+    transition: 0.5s;
+}
+.wind img{
+    position: relative;
+    top: 25px;
+    left: 10px;
+    height: 60px;
+    width: 60px;
+    transition: 0.5s;
+   
+}
+.humidity{
+    position: relative;
+    top: 275px;
+    height: 125px;
+    left: 280px;
+    width:150px;
+    color: whitesmoke;
+    /* border-right: 1px solid whitesmoke; */
+    transition: 0.5s;
+}
+.humidity label{
+    font-size: 20px;
+    transition: 0.5s;
+}
+.humidity img{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    top: 20px;
+    transition: 0.5s;
+}
+
+ /* Applying Hovering Effect to the Temp field */
+
+ .temp:hover img{
+    height: 90px;
+    width: 90px;
+ }
+ .temp:hover label {
+   font-size: 130px;
+ }
+ .wind:hover label{
+     font-size: 25px;
+ }
+ .wind:hover img{
+     height:60px;
+     width: 60px;
+ }
+ .wind:hover .dta{
+     font-size: 60px;
+ }
+
+
+ .humidity:hover label{
+    font-size: 25px;
+}
+.humidity:hover img{
+    height:45px;
+    width: 45px;
+}
+.humidity:hover .dta{
+    font-size: 60px;
+}
+
+
+.right {
+    position: absolute;
+    left: 58%;
+    top: 30px;
+    height: 500px;
+    width: 40%;
+    background: linear-gradient(135deg, rgb(10, 22, 10), rgb(3, 3, 13));
+    filter: opacity(0.9);
+    border-radius: 50px;
+}
+
+.search {
+    display: flex;
+    position: relative;
+}
+
+.search input {
+    display: flex;
+    position: relative;
+    top: 50px;
+    left: 36px;
+    height: 54px;
+    width: 350px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: larger;
+    color: black;
+    transition-duration: 0.5s
+}
+
+.search button {
+    position: absolute;
+    top: 50px;
+    left: 412px;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+}
+
+.searchbtn img {
+    height: 40px;
+    width: 40px;
+}
+
+.search button:hover {
+    height: 70px;
+    width: 70px;
+    border-radius: 40px;
+}
+
+.search input:hover {
+    height: 60px;
+    width: 360px;
+    border-radius: 30px;
+}
+
+.logo img:hover {
+    height: 50px;
+    width: 135px;
+    border-radius: 60px;
+}
+
+.cities {
+    display: grid;
+    position: absolute;
+    top: 130px;
+    height: 370px;
+    width: 512px;
+    grid-template-columns: auto auto auto;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    /* background: blue; */
+    border-radius: 50px;
+
+}
+
+.City {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+    /* height: 110px;
+    width: 150px; */
+    /* border-radius: 30px; */
+    transition: 0.5s;
+}
+
+.City:hover {
+    font-size: 50px;
+    color: rgb(196, 51, 104);
+}

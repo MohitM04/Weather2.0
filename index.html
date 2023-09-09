@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="WeatherX_fevicon.png" type="image/x-icon">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway:wght@100&family=Rosario:ital,wght@1,300&display=swap');
+    </style>
+</head>
+<body> 
+<div class="container">
+    <div class="left">
+        <div class="citylogo">
+            <img src="goverment.png" alt="">
+        </div>
+        <div class="cityname"></div>
+        <div class="info">
+            <div class="temp">
+                <img src="hot.png" alt="">
+                <label ></label>
+            </div>
+            <div class="cloud">
+                <img id="cloudImage" src="cloud.png" alt="">
+            </div>
+            <div class="wind">
+               <label>Wind</label><img src="wind.png" alt=""><br>
+               <div class="dta"></div>
+            </div>
+            <div class="humidity">
+                <label>Humidity</label>
+                <img src="humidity.png" alt="">
+                <div class="dta"></div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+      <div class="search"> 
+        <input type="text" placeholder="Search Your City">
+        <button type="submit" class="searchbtn">
+            <img src="search.png" alt="">
+        </button>
+    </div> 
+    <div class="cities">
+        <div class="City" id="Mumbai" onclick="checkWeather(this.id)">Mumbai</div>
+        <div class="City" id="Delhi" onclick="checkWeather(this.id)">Delhi</div>
+        <div class="City" id="Agra"onclick="checkWeather(this.id)" >Agra</div>
+        <div class="City" id="Bhopal" onclick="checkWeather(this.id)">Bhopal</div>
+        <div class="City" id="Indore" onclick="checkWeather(this.id)">Indore</div>
+        <div class="City" id="Goa" onclick="checkWeather(this.id)">Goa</div>
+        <div class="City" id="Pune" onclick="checkWeather(this.id)">Pune</div>
+        <div class="City" id="Jaipur" onclick="checkWeather(this.id)">Jaipur</div>
+        <div class="City" id="Ahmedabad" onclick="checkWeather(this.id)">Ahmedabad</div>
+    </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
